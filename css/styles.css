@@ -4,6 +4,7 @@
     --gris2:#EFEFEF;
     --encabezado: #A3F3A0;
     --botones:#84EC3F;
+    --vinculo:#63B1EE;
 }
 html{
     font-size: 62.5%;
@@ -54,5 +55,5 @@ align-items: center;
     text-decoration: none;
     font-size: 2rem;
     text-align: center;
-    
+    color: var(--vinculo);
 }
