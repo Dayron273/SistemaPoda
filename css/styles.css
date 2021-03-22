@@ -2,11 +2,13 @@
     --blanco:#ffffff;
     --oscuro:#212121;
     --gris2:#EFEFEF;
-    --verde: #239C4B;
+    --encabezado: #A3F3A0;
+    --botones:#84EC3F;
 }
 html{
     font-size: 62.5%;
     box-sizing: border-box;
+    background-color: var(--blanco);
 }
 *,*:before,*:after{
     box-sizing: inherit;
