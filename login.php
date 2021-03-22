@@ -11,7 +11,12 @@
 	<header class="site-header">
 		<div class="contenedor">
 			<div class="barra">
-				<a href="pantallaInicial.php"><img src="img/Logo.jpeg" alt="Logo"></a>
+				<div>
+					<a href="index.html"><img src="img/Logo.png" alt="Logo"></a>
+				</div>
+				<div class="titulo">
+					<h1>Sistema de llave CDMX</h1>
+				</div>
 			</div>
 		</div>
 	</header>

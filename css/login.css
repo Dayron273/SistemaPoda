@@ -26,14 +26,13 @@ html{
 }
 .barra{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-top: 3rem;
+    align-items: center;
+    justify-content: space-between;
 }
 .barra img{
     width: 15rem;
 }
-
 /* --Footer-- */
 .footer-site{
     background-color: #239C48;
