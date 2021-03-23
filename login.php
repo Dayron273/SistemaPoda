@@ -26,9 +26,9 @@
 			<form action="" method="post" autocomplete="off">
 				<h1>Iniciar Sesión</h1>
 				<p id="mensaje"></p>
-				<input type="text" name="usuario" class="campo user" placeholder="Usuario">
+				<input type="text" name="usuario" class="campo user" placeholder="Correo">
 				<input type="password" name="clave" class="campo pass" placeholder="Contraseña">
-				<a href="#">¿Olvidaste tu susuario o contraseña?</a><br><br>
+				<a href="catalogoTramites.php">¿Olvidaste tu susuario o contraseña?</a><br><br>
 				<input type="submit" value="Ingresar" id="boton">
 			</form>
 		</div>
