@@ -1,3 +1,34 @@
+<?php 
+include 'Funciones/Funciones.php';
+$alert = '';
+if(!empty($_SESSION['active'])){
+	header('location: index.html');
+}else{
+	if(!empty($_POST)){
+		if(empty($_POST['usuario']) || empty($_POST['clave'])){
+			$alert = "Uno de los campos está vacío";
+		}else{
+			require_once "Funciones/conexion.php";
+			$user = $_POST['usuario'];
+			$pass = $_POST['clave'];
+			$query = mysqli_query($conection,"SELECT *FROM usuario WHERE email = '$user' AND clave = '$pass'");
+			$result = mysqli_num_rows($query);
+			if($result > 0){
+				$data = mysqli_fetch_array($query);
+				$_SESSION['active'] = true;
+				$_SESSION['rol'] = $data['tipoUsuario'];
+				if($_SESSION['rol'] == 0){			//Tramitante
+					header('location: catalogoTramites.php');	
+				}	
+			}else{
+				$alert = 'El usuario o la clave son incorrectos';
+				session_destroy();
+			}
+		}
+	}
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,7 +56,7 @@
 		<div class="contenedor-panel">
 			<form action="" method="post" autocomplete="off">
 				<h1>Iniciar Sesión</h1>
-				<p id="mensaje"></p>
+				<p id="mensaje"><?php echo $alert ?></p>
 				<input type="text" name="usuario" class="campo user" placeholder="Correo">
 				<input type="password" name="clave" class="campo pass" placeholder="Contraseña">
 				<a href="catalogoTramites.php">¿Olvidaste tu usuario o contraseña?</a><br><br>
