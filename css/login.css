@@ -18,6 +18,7 @@ html{
     margin-top: 10rem;
     margin-bottom: 2rem;
 }
+
 /*-- Header --*/ 
 .site-header{
     background-color: #EFEFEF;
@@ -90,8 +91,18 @@ p{
 }
 
 #boton{
-    padding: 2rem 8rem 2rem 8rem ;
+    padding: 2rem 10rem 2rem 10rem ;
     background-color: #52E152;
+    border-width: 0.1rem;
     font-size: 2.7rem;
     margin: 1rem 0 0;
+}
+#registro{
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: #63B1EE;
 }
