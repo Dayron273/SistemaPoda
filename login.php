@@ -16,9 +16,12 @@ if(!empty($_SESSION['active'])){
 			if($result > 0){
 				$data = mysqli_fetch_array($query);
 				$_SESSION['active'] = true;
+				$_SESSION['idUsuario'] = $data['idUsuario'];
 				$_SESSION['rol'] = $data['tipoUsuario'];
 				if($_SESSION['rol'] == 0){			//Tramitante
 					header('location: catalogoTramites.php');	
+				}elseif($_SESSION['rol'] == 1){		//Servidor Publico
+					header('location: catalogoTramites.php');
 				}	
 			}else{
 				$alert = 'El usuario o la clave son incorrectos';

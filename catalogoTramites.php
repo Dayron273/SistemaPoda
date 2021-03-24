@@ -1,3 +1,7 @@
+<?php 
+include 'Funciones/Funciones.php';
+echo $_SESSION['idUsuario']; 
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -11,6 +15,7 @@
 			<div class="contenedor">
 				<div class="barra">
 					<a href="login.php"><img src="img/Logo.png" alt="Logo"></a>
+					<a href="Funciones/cerrarSesion.php">Cerrar Sesión</a>
 				</div>
 			</div>
 		</header>
@@ -26,7 +31,6 @@
 			</div>
 
 			<div class="seccionespecial">
-				<?php obtenerExpedientes($conection); ?>
 			</div>
 		</main>
 		<footer class="footer-site seccion"></footer>
