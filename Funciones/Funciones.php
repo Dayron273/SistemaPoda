@@ -61,10 +61,10 @@ function obtenerTramites($conection,$idTramitante){
 }
 
 function obtenerTramitesServidor($conection){
-    $query = mysqli_query($conection, "SELECT *FROM tramite WHERE idTramitante = '$idTramitante'");
+    $query = mysqli_query($conection, "SELECT *FROM tramite WHERE status='Pendiente de Revisión' ORDER BY fecha asc");
     $result = mysqli_num_rows($query);
     if($result > 0){
-        echo "<h2>Haz realizado $result tramites</h2>";
+        echo "<h2>Existen $result tramites pendientes por revisar</h2>";
         while($row = mysqli_fetch_array($query)){
             if($row['tipoTramite'] = "publico"){
                 $complemento = "Poda y derribo de árboles y ramas en vía pública";
@@ -88,7 +88,7 @@ function obtenerTramitesServidor($conection){
             echo "</div>";
         }
     }else{
-        echo "<h2>Sin tramites pendientes</h2>";
+        echo "<h2>No existen tramites pendientes</h2>";
     }
 }
 

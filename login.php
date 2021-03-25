@@ -2,7 +2,7 @@
 include 'Funciones/Funciones.php';
 $alert = '';
 if(!empty($_SESSION['active'])){
-	header('location: index.html');
+	header('location: SolicitudPub.html');
 }else{
 	if(!empty($_POST)){
 		if(empty($_POST['usuario']) || empty($_POST['clave'])){
