@@ -114,3 +114,13 @@ border: none;
 .formulario input[type="text"]{
 border-radius: .5rem;
 }
+.contenedor-campos{
+
+}
+.campo{
+margin-bottom: 2rem;
+}
+.subcontenedor{
+display: flex;
+justify-content: space-between;
+}
