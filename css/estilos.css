@@ -56,6 +56,9 @@ h5{
     justify-content: start;
     
 }
+.header img{
+    width: 15rem;
+}
 .site-header h1 {
     color: #0000;
 
