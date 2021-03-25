@@ -62,9 +62,9 @@ if(!empty($_SESSION['active'])){
 				<p id="mensaje"><?php echo $alert ?></p>
 				<input type="text" name="usuario" class="campo user" placeholder="Correo">
 				<input type="password" name="clave" class="campo pass" placeholder="Contraseña">
-				<a href="catalogoTramites.php">¿Olvidaste tu usuario o contraseña?</a><br><br>
+				<a href="">¿Olvidaste tu usuario o contraseña?</a><br><br>
 				<input type="submit" value="Ingresar" id="boton"> </br></br>
-				<p id="registro">¿Aún no tienes una cuenta? <a href="">Regístrate</a></p>
+				<p id="registro">¿Aún no tienes una cuenta? <a href="formulario.html">Regístrate</a></p>
 			</form>
 		</div>
 	</main>
