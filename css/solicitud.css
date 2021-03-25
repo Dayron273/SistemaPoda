@@ -74,9 +74,11 @@ align-items: center;
 .formulario{
     font-size: 2rem;
     margin-top: 1rem;
+    background-color: var(--botones);
+    border-radius: 1rem;
 }
 .boton{
-    background-color: var(--botones);
+    background-color: var(--encabezado);
     color: var(--oscuro);
     padding: 1rem 3rem;
     margin-top: 1rem;
@@ -87,6 +89,7 @@ align-items: center;
     border-radius: 0.5rem;
     width: 90%;
     text-align: center;
+    border: none;
     
 }
 @media (min-width: 768px) { 
