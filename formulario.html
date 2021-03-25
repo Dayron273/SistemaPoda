@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- PAra que se vea bien en un celular -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet"><!--referenciaa la fuente de google font-->
+    <link href="css/normalize.css" rel="stylesheet">     <!--referencia a la hoja de estilos-->
+    <link href="css/estilos.css" rel="stylesheet">     <!--referencia a la hoja de estilos-->
+    <title>Registro</title>
+</head>
+<header >
+    <div class="site-header">
+        <div class="contenedor header ">
+            <img src="img/logotipoCdmx.svg" alt="Logotipo de la Cdmx">
+            <h3 class="fw-300">Formulario de Registro</h3>   
+        </div>
+    </div>  
+</header>  
+<body>
+    <main class="contenedor seccion contenido-centrado">
+        <h1 class="fw-300 centrar-texto">Formulario de Registro</h1> 
+        <form id="contacto">
+            <fieldset>
+                <legend>Datos generales del solicitante</legend>
+                <div class="forma-contacto">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" placeholder="tu nombre" required>
+            
+                        <label for="AapellidoPaterno">Apellido paterno:</label>
+                        <input type="text" id="apellidoPaterno" placeholder="Apellido paterno" required>
+            
+                        <label for="">Apellido materno:</label>
+                        <input type="text" id="apellidoMaterno" placeholder="Apellido materno" required>
+                        
+                        <label for="opciones">Género</label>
+                        <select id="opciones">
+                            <option  disabled selected>--Selecione--</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>    
+                        </select>
+                    </div>
+                    <div>
+                        <label for="curp">Curp:</label>
+                        <input type="text" id="curp" placeholder="Curp" required>
+
+                        <label for="fechaNacimiento">Fecha de nacimiento</label>
+                        <input type="date" id="fechaNacimiento">
+                        
+                        <label for="celular">Telefono celular</label>
+                        <input type="tel" id="cel" placeholder="Telefono celular" required>
+                        
+                        <label for="telefono">Telefono</label>
+                        <input type="tel" id="telefono" placeholder="Telefono" required>
+                    </div>
+                
+                    <div>
+                        <label for="codigoPostal">Codigo postal</label>
+                        <input type="number" id="cp" placeholder="Codigo postal" required>
+                        
+                        <label for="alcandiaMunicipio">Alcandia/Municipio:</label>
+                        <input type="text" id="Alcaldiamunicipio" placeholder="Ingrese su Alcaldia/Municipio" required>
+                        
+                        <label for="asentamiento"> Asentamiento:</label>
+                        <input type="text" id="asentamiento" placeholder="Ingrese su Asentamiento" required>
+                    </div>    
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="E-mail" required>
+                        
+                        <label for="email">Confirmar E-mail</label>
+                        <input type="email" id="emailConfimado" placeholder="Confirme su E-mail" required>
+                        
+                        <label for="password">Password</label>
+                        <input type="password" id="pass" placeholder="Password" required>
+                        
+                        <label for="ConfirmaPassword">Confirmar Password</label>
+<<<<<<< HEAD
+                        <input name="passConf" type="password" id="confirmarpass" placeholder="Confirme su Password" required>
+=======
+                        <input type="password" id="confirmarpass" placeholder="Confirme su Password" required>
+>>>>>>> 10f42604318badfba9b759d426a1d36431c87859
+                    </div>
+                </div>
+            </fieldset>
+            <div class="ver-todas"> 
+                <input class="boton boton-verde" type="submit" value="Registrarse">
+            </div>
+        </form>
+    </main>
+    <script src="js/validacionRegistro.js"></script>
+</body>
+
+</html>
