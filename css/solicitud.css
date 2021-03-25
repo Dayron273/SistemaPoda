@@ -74,9 +74,11 @@ align-items: center;
 .formulario{
     font-size: 2rem;
     margin-top: 1rem;
+    background-color: var(--botones);
+    border-radius: 1rem;
 }
 .boton{
-    background-color: var(--botones);
+    background-color: var(--encabezado);
     color: var(--oscuro);
     padding: 1rem 3rem;
     margin-top: 1rem;
@@ -87,7 +89,11 @@ align-items: center;
     border-radius: 0.5rem;
     width: 90%;
     text-align: center;
+    border: none;
     
+}
+.boton:hover{
+    cursor: pointer;
 }
 @media (min-width: 768px) { 
     .boton{
@@ -100,8 +106,9 @@ align-items: center;
     align-items: flex-end;
 }
 .formulario{
-    width: min(120rem, 100%);/*utiliza el valor mas pequeño*/
+    width: min(100rem, 100%);/*utiliza el valor mas pequeño*/
    margin: 0 auto;
+   padding: 2rem;
 }
 .formulario fieldset{
 border: none;
@@ -113,6 +120,7 @@ border: none;
 }
 .formulario input[type="text"]{
 border-radius: .5rem;
+border: none;
 }
 .contenedor-campos{
 
@@ -123,4 +131,8 @@ margin-bottom: 2rem;
 .subcontenedor{
 display: flex;
 justify-content: space-between;
+}
+.campo textarea{
+    height: 20rem;
+    width: 100%;
 }
