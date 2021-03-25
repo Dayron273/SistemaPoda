@@ -57,10 +57,6 @@ align-items: center;
     text-decoration: none;
     font-size: 2rem;
     text-align: center;
-    color: var(--parrafo);
+    color: var(--vinculo);
 }
-*{
-    margin: 0;
-    padding: 0;
 
-}
