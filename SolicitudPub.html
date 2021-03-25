@@ -35,7 +35,6 @@
                 o trasplante de árboles en propiedad pública
             </p>
             <div class="fecha">
-                <input type="date" value="var f">
                 <script type="text/JavaScript"> 
                     var f = new Date(); 
                     document.write("Fecha:"+" "+f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear()); 
@@ -48,7 +47,7 @@
             <div class="contenedor-campos">
                 <div class="campo">
                     <label>Alcaldía donde se desea realizar</label>
-                    <select required>
+                    <select name="alcaldia" required>
                         <option class="alcaldia">ALCALDIA LA MAGDANELA</option>
                         <option class="alcaldia">Alcaldía Gustavo a Madero</option>
                         <option class="alcaldia">Alcaldía Venustiano Carranza</option>
@@ -68,49 +67,49 @@
                 </div>
                 <div class="subcontenedor">
                     <div class="campo">
-                        <label>Calle:</label><input type="text" required>
+                        <label>Calle:</label><input type="text" name="calle" required>
                     </div>
                     <div class="campo">
-                        <label>Número ext/int:</label><input type="text" required>
+                        <label>Número ext/int:</label><input type="text" name="numcalle" required>
                     </div>
                 </div>
                 <div class="subcontenedor">
                     <div class="campo">
-                        <label>Colonia:</label><input type="text" required>
+                        <label>Colonia:</label><input type="text" name="colonia" required>
                     </div>
                     <div class="campo">
-                        <label>Código Postal:</label><input type="text" required>
+                        <label>Código Postal:</label><input type="text" name="postal" required>
                     </div>
                 </div>
                 <div class="campo">
                     <p>Descripción de la causa por la que se solicita</p>
-                    <textarea required></textarea>
+                    <textarea name="razon" required></textarea>
                 </div>
                 <div class="campo">
                     <p>En este apartado se súbiran los documentos solicitados en formato PDF con un tamaño máximo de 10Mb c/u </p>
                     <p>Documento de identificación con firma visible (INE, Cédula profesional, Pasaporte o Cartilla del SMN)</p>    
                 </div>
                 <div class="campo">
-                    <input type="text"> <input type="file" name="Subir" accept=".pdf" required>
+                    <input type="text"> <input type="file" name="credencial" accept=".pdf" required>
                     <p>A continuación se requieren fotografías para llevar acabo la solicitud,
                     deben presentarse en formato JPEG o PNG con un tamaño máximo de 10MB c/u
                 </p>
                 </div>
                 <div class="campo">
                     <p>Fotografía del entorno</p>
-                <input type="text"> <input type="file" name="Subir" accept=".png, .jpg" required>
+                <input type="text"> <input type="file" name="entorno" accept=".png, .jpg" required>
                 </div>
                 <div class="campo">
                     <p>Fotografía de una hoja</p>
-                    <input type="text"> <input type="file" name="Subir" accept=".png, .jpg" required>
+                    <input type="text"> <input type="file" name="hoja" accept=".png, .jpg" required>
                 </div>
                 <div class="campo">
                     <p>Fotografía del tronco</p>
-                    <input type="text"> <input type="file" name="Subir" accept=".png, .jpg" required>
+                    <input type="text"> <input type="file" name="tronco" accept=".png, .jpg" required>
                 </div>
                 <div class="campo">
                     <p>Fotografía de fauna del árbol (si es que se presenta)</p>
-                    <input type="text"> <input type="file" name="Subir" accept=".png, .jpg" >
+                    <input type="text"> <input type="file" name="fauna" accept=".png, .jpg" >
                 </div>
             </div>
             <div class="boton-dir">

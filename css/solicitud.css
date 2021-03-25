@@ -106,7 +106,7 @@ align-items: center;
     align-items: flex-end;
 }
 .formulario{
-    /*width: min(100rem, 100%);*//*utiliza el valor mas pequeño*/
+    width: min(120rem, 100%);/*utiliza el valor mas pequeño*/
    /*margin: 0 auto;*/
    padding: 2rem;
 }
@@ -120,7 +120,6 @@ border: none;
 }
 .formulario input[type="text"]{
 border-radius: .5rem;
-border: none;
 }
 .campo{
 margin-bottom: 2rem;
