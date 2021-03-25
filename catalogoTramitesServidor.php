@@ -17,7 +17,7 @@ obtenerDatosServidor($_SESSION['idUsuario'],$conection,"servidorpublico");
 				<div class="barra">
 					<a href="login.php"><img src="img/Logo.png" alt="Logo"></a>
 					<div>
-                    <h1>Tus trámites</h1>
+                    <h1>Listado de trámites</h1>
                 </div>
                 <div class="log">
                     <a href="Funciones/cerrarSesion.php">Cerrar Sesión</a>
@@ -28,7 +28,7 @@ obtenerDatosServidor($_SESSION['idUsuario'],$conection,"servidorpublico");
 
 		<main class="seccion contenedor">
 			<div class="seccionespecial">
-				<?php obtenerTramites($conection, $_SESSION['idTramitante']);?>
+				<?php obtenerTramitesServidor($conection);?>
 			</div>
 		</main>
 		<footer class="footer-site seccion"></footer>

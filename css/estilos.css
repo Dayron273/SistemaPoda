@@ -1,0 +1,256 @@
+html {
+    font-size: 62.5%;
+    /*Reset para REMS - 62.5% = 10px de 16 px*/
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    /*Interlineado*/
+}
+
+img {
+    max-width: 100%;
+    /*Toma todo el espacio disponible siempre y cuando no se pase del 100%*/
+    margin-top: 3rem;
+}
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+h5{
+    font-size: 1rem;
+}
+
+.contenedor {
+    max-width: 120rem;
+    /*Toma todo el espacio disponible siempre y cuando no se pase de los pixeles deseados(1200px)*/
+    margin: 0 auto 0 auto;
+    /*margen (hacia arriba,hacia la derecha, hacia abajo, hacia la izquierda)  y se centra*/
+}
+
+.site-header {
+    background-color: #90EE90;
+    padding: 1rem 0 .5rem 0;
+}
+.header{
+    height: 100%;
+    display: grid;
+    justify-content: start;
+    
+}
+.site-header h1 {
+    color: #0000;
+
+    max-width: 60rem;
+    line-height: 1.5;
+}
+
+.site-header h3 {
+    color:  #90EE90;
+
+    max-width: 50rem;
+    line-height: .5;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+.separacion{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.fw-300 {
+    font-weight: 300;
+    /*La el tamaño de la letra/*/
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.contacto p {
+    font-size: 1.3rem;
+    color: #4f4f4f;
+    margin: 2rem 0 0 0;
+}
+
+legend {
+    font-size: 2.4rem;
+    color: #4f4f4f;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+input:not([type="submit"]),
+
+/*selector de atributos(el not es para evadir el atributo seleccionado)*/
+
+textarea,
+select {
+    display: block;
+    background-color: #e1e1e1;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+textarea {
+    height: 20rem;
+}
+
+.boton {
+    color: #ffffff;
+    font-weight: 700;
+    /*grosor de la letra*/
+    text-decoration: none;
+    font-size: 2rem;
+    /*tamaño de la letra*/
+    padding: 1.5rem 5rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.boton-verde {
+    background-color: #71B100;
+}
+
+
+.ver-todas {
+    display: flex;
+    justify-content: flex-end;
+    /*mueve los elementos hasta la izquierda*/
+}
+
+.forma-contacto {
+  
+    display: grid;
+    grid-template-columns: repeat(4,33rem);
+    justify-content: space-evenly;  
+}
+@media screen and (max-width: 1400px ){
+    .forma-contacto {
+  
+        display: grid;
+        grid-template-columns: repeat(2,33rem);
+        justify-content: space-evenly;  
+    }
+}
+@media screen and (max-width: 1380px ){
+    .forma-contacto {
+  
+        display: grid;
+        grid-template-columns: repeat(2,50rem);
+        justify-content: space-evenly;  
+    }
+}
+@media screen and (max-width: 1080px ){
+    .forma-contacto {
+  
+        display: grid;
+        grid-template-columns: repeat(2,40rem);
+        justify-content: space-evenly;  
+    }
+}
+@media screen and (max-width: 1000px ){
+    .forma-contacto {
+  
+        display: grid;
+        grid-template-columns: repeat(2,30rem);
+        justify-content: space-evenly;  
+    }
+}
+@media screen and (max-width: 750px ){
+    .forma-contacto {
+  
+        display: grid;
+        grid-template-columns: repeat(1,50rem);
+        justify-content: space-evenly;  
+    }
+}
+@media screen and (max-width: 600px ){
+    .forma-contacto {
+  
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        justify-content: space-evenly;  
+    }
+}
+
+.contenido-centrado {
+    max-width: 150rem;
+}
+@media screen and (max-width: 1400px ){
+    .contenido-centrado {
+        max-width: 125rem;
+    }
+}
+@media screen and (max-width: 1320px ){
+    .contenido-centrado {
+        max-width: 115rem;
+    }
+}
+@media screen and (max-width: 1000px ){
+    .contenido-centrado {
+        max-width: 80rem;
+    }
+}
+@media screen and (max-width: 750px ){
+    .contenido-centrado {
+        max-width: 50rem;
+    }
+}
+@media screen and (max-width: 600px ){
+    .contenido-centrado {
+        max-width: 95%;
+    }
+}
