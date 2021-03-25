@@ -21,7 +21,7 @@
 <body>
     <main class="contenedor seccion contenido-centrado">
         <h1 class="fw-300 centrar-texto">Formulario de Registro</h1> 
-        <form class="contacto" action="">
+        <form id="contacto">
             <fieldset>
                 <legend>Datos generales del solicitante</legend>
                 <div class="forma-contacto">
@@ -77,7 +77,11 @@
                         <input type="password" id="pass" placeholder="Password" required>
                         
                         <label for="ConfirmaPassword">Confirmar Password</label>
+<<<<<<< HEAD
+                        <input name="passConf" type="password" id="confirmarpass" placeholder="Confirme su Password" required>
+=======
                         <input type="password" id="confirmarpass" placeholder="Confirme su Password" required>
+>>>>>>> 10f42604318badfba9b759d426a1d36431c87859
                     </div>
                 </div>
             </fieldset>
@@ -86,8 +90,7 @@
             </div>
         </form>
     </main>
-    
-
+    <script src="js/validacionRegistro.js"></script>
 </body>
 
 </html>
