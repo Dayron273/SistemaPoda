@@ -7,6 +7,7 @@
     --vinculo:#63B1EE; 
     --parrafo:#DE920C;
 }
+
 html{
     font-size: 62.5%;
     box-sizing: border-box;
@@ -56,5 +57,10 @@ align-items: center;
     text-decoration: none;
     font-size: 2rem;
     text-align: center;
-    color: var(--vinculo);
+    color: var(--parrafo);
+}
+*{
+    margin: 0;
+    padding: 0;
+
 }
