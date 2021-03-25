@@ -75,3 +75,22 @@ align-items: center;
     font-size: 2rem;
     margin-top: 1rem;
 }
+.boton{
+    background-color: var(--botones);
+    color: var(--oscuro);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    width: 90%;
+    text-align: center;
+    
+}
+@media (min-width: 768px) { 
+    .boton{
+        width:auto;
+    }
+}
