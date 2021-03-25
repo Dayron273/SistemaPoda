@@ -7,7 +7,6 @@
     --vinculo:#63B1EE; 
     --parrafo:#DE920C;
 }
-
 html{
     font-size: 62.5%;
     background-color: var(--blanco);
@@ -55,7 +54,17 @@ align-items: center;
 .barra a{
     text-decoration: none;
     font-size: 2rem;
-    text-align: center;
-    color: var(--vinculo);
+    text-align:center;
 }
-
+.tipo{
+    font-size: 2rem;
+}
+.tipo span{
+    font-weight: bold;
+}
+.fecha{
+    font-size: 2rem;
+}
+.dat{
+    font-weight: bold;
+}
