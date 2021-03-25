@@ -21,7 +21,7 @@ if(!empty($_SESSION['active'])){
 				if($_SESSION['rol'] == 0){			//Tramitante
 					header('location: catalogoTramites.php');	
 				}elseif($_SESSION['rol'] == 1){		//Servidor Publico
-					header('location: catalogoTramites.php');
+					header('location: catalogoTramitesServidor.php');
 				}	
 			}else{
 				$alert = 'El usuario o la clave son incorrectos';

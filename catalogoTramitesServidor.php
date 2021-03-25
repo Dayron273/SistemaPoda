@@ -1,7 +1,7 @@
 <?php 
 include 'Funciones/Funciones.php';
 require_once 'Funciones/conexion.php';
-obtenerDatos($_SESSION['idUsuario'],$conection,"Tramitante");
+obtenerDatosServidor($_SESSION['idUsuario'],$conection,"servidorpublico");
 ?>
 <!DOCTYPE html>
 <html>
