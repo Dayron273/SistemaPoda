@@ -92,6 +92,9 @@ align-items: center;
     border: none;
     
 }
+.boton:hover{
+    cursor: pointer;
+}
 @media (min-width: 768px) { 
     .boton{
         width:auto;
@@ -130,6 +133,6 @@ display: flex;
 justify-content: space-between;
 }
 .campo textarea{
-    
-
+    height: 20rem;
+    width: 100%;
 }
