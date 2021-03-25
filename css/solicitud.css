@@ -74,7 +74,7 @@ align-items: center;
 .formulario{
     font-size: 2rem;
     margin-top: 1rem;
-    background-color: var(--botones);
+    background-color: var(--blanco);
     border-radius: 1rem;
 }
 .boton{
@@ -106,8 +106,8 @@ align-items: center;
     align-items: flex-end;
 }
 .formulario{
-    width: min(100rem, 100%);/*utiliza el valor mas pequeño*/
-   margin: 0 auto;
+    /*width: min(100rem, 100%);*//*utiliza el valor mas pequeño*/
+   /*margin: 0 auto;*/
    padding: 2rem;
 }
 .formulario fieldset{
@@ -122,9 +122,6 @@ border: none;
 border-radius: .5rem;
 border: none;
 }
-.contenedor-campos{
-
-}
 .campo{
 margin-bottom: 2rem;
 }
@@ -135,4 +132,9 @@ justify-content: space-between;
 .campo textarea{
     height: 20rem;
     width: 100%;
+}
+.contenedor-tipo{
+    margin-bottom: 3rem;
+    display: block;
+
 }
