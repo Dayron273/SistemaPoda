@@ -68,3 +68,10 @@ align-items: center;
 .dat{
     font-weight: bold;
 }
+.alcaldia{
+    text-transform: uppercase;
+}
+.formulario{
+    font-size: 2rem;
+    margin-top: 1rem;
+}

@@ -39,8 +39,44 @@
                 document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear()); 
                 </script>
         </div>
-    <form>
-        <legend class="tipo dat">Datos del Trámite</legend>
+        <br>
+    <form class="formulario">
+       <fieldset>
+            <legend class="tipo dat">Datos del Trámite</legend>
+            <label>Alcaldía donde se desea realizar</label>
+            <select>
+                <option class="alcaldia">ALCALDIA LA MAGDANELA</option>
+                <option class="alcaldia">Alcaldía Gustavo a Madero</option>
+                <option class="alcaldia">Alcaldía Venustiano Carranza</option>
+                <option class="alcaldia">Alcaldía Iztacalco</option>
+                <option class="alcaldia">Alcaldia Cuajimalpa de Morelos</option>
+                <option class="alcaldia">Alcaldia Iztapalapa</option>
+                <option class="alcaldia">Alcaldia Coyoacan</option>
+                <option class="alcaldia">alcaldia tlalpan</option>
+                <option class="alcaldia">Alcaldía tlahuac</option>
+                <option class="alcaldia">Alcaldía milpa alta</option>
+                <option class="alcaldia">Alcaldía miguel hidalgo </option>
+                <option class="alcaldia">Alcaldia benito juarez</option>
+                <option class="alcaldia">Alcaldia alvaro obregon</option>
+                <option class="alcaldia">Alcaldia cuauhtemoc </option>
+                <option class="alcaldia">Alcaldia azcapotzalco </option>
+            </select>
+                <div>
+                    <label>Calle:</label><input type="text">
+                    <label>Número ext/int:</label><input type="text">
+                </div>
+                <div>
+                    <label>Colonia:</label><input type="text">
+                    <label>Código Postal:</label><input type="text">
+                </div>
+            
+            <p>Descripción de la causa por la que se solicita</p>
+            <textarea></textarea>
+            <p>En este apartado se súbiran los documentos solicitados en formato PDF con un tamaño máximo de 10Mb c/u </p>
+            <label>Documento de identificación con firma visible (INE, Cédula profesional, Pasaporte o Cartilla del SMN)</label>
+            <input type="file" name="Subir">
+            
+        </fieldset>
 
     </form>
     </main>
