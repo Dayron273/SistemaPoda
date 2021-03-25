@@ -43,26 +43,27 @@
     <form class="formulario">
        <fieldset>
             <legend class="tipo dat">Datos del Trámite</legend>
-            <div class="">
-                <label>Alcaldía donde se desea realizar</label>
-                <select required>
-                    <option class="alcaldia">ALCALDIA LA MAGDANELA</option>
-                    <option class="alcaldia">Alcaldía Gustavo a Madero</option>
-                    <option class="alcaldia">Alcaldía Venustiano Carranza</option>
-                    <option class="alcaldia">Alcaldía Iztacalco</option>
-                    <option class="alcaldia">Alcaldia Cuajimalpa de Morelos</option>
-                    <option class="alcaldia">Alcaldia Iztapalapa</option>
-                    <option class="alcaldia">Alcaldia Coyoacan</option>
-                    <option class="alcaldia">alcaldia tlalpan</option>
-                    <option class="alcaldia">Alcaldía tlahuac</option>
-                    <option class="alcaldia">Alcaldía milpa alta</option>
-                    <option class="alcaldia">Alcaldía miguel hidalgo </option>
-                    <option class="alcaldia">Alcaldia benito juarez</option>
-                    <option class="alcaldia">Alcaldia alvaro obregon</option>
-                    <option class="alcaldia">Alcaldia cuauhtemoc </option>
-                    <option class="alcaldia">Alcaldia azcapotzalco </option>
-                </select>
-            </div>
+            <div class="contenedor-campos">
+                <div class="campo">
+                    <label>Alcaldía donde se desea realizar</label>
+                    <select required>
+                        <option class="alcaldia">ALCALDIA LA MAGDANELA</option>
+                        <option class="alcaldia">Alcaldía Gustavo a Madero</option>
+                        <option class="alcaldia">Alcaldía Venustiano Carranza</option>
+                        <option class="alcaldia">Alcaldía Iztacalco</option>
+                        <option class="alcaldia">Alcaldia Cuajimalpa de Morelos</option>
+                        <option class="alcaldia">Alcaldia Iztapalapa</option>
+                        <option class="alcaldia">Alcaldia Coyoacan</option>
+                        <option class="alcaldia">alcaldia tlalpan</option>
+                        <option class="alcaldia">Alcaldía tlahuac</option>
+                        <option class="alcaldia">Alcaldía milpa alta</option>
+                        <option class="alcaldia">Alcaldía miguel hidalgo </option>
+                        <option class="alcaldia">Alcaldia benito juarez</option>
+                        <option class="alcaldia">Alcaldia alvaro obregon</option>
+                        <option class="alcaldia">Alcaldia cuauhtemoc </option>
+                        <option class="alcaldia">Alcaldia azcapotzalco </option>
+                    </select>
+                </div>
                 <div>
                     <label>Calle:</label><input type="text" required>
                     <label>Número ext/int:</label><input type="text" required>
@@ -71,25 +72,37 @@
                     <label>Colonia:</label><input type="text" required>
                     <label>Código Postal:</label><input type="text" required>
                 </div>
-            
-            <p>Descripción de la causa por la que se solicita</p>
-            <textarea required></textarea>
-            <p>En este apartado se súbiran los documentos solicitados en formato PDF con un tamaño máximo de 10Mb c/u </p>
-            <p>Documento de identificación con firma visible (INE, Cédula profesional, Pasaporte o Cartilla del SMN)</p>
-            
-            <input type="text"> <input type="file" name="Subir" accept=".pdf" required>
-            <p>A continuación se requieren fotografías para llevar acabo la solicitud,
-                deben presentarse en formato JPEG o PNG con un tamaño máximo de 10MB c/u
-            </p>
-            <p>Fotografía del entorno</p>
-            <input type="text"> <input type="file" name="Subir" accept=".png, .jpg" required>
-            <p>Fotografía de una hoja</p>
-            <input type="text"> <input type="file" name="Subir" accept=".png, .jpg" required>
-            <p>Fotografía del tronco</p>
-            <input type="text"> <input type="file" name="Subir" accept=".png, .jpg" required>
-            <p>Fotografía de fauna del árbol (si es que se presenta)</p>
-            <input type="text"> <input type="file" name="Subir" accept=".png, .jpg" >
-            <br>
+                <div>
+                    <p>Descripción de la causa por la que se solicita</p>
+                    <textarea required></textarea>
+                </div>
+                <div>
+                    <p>En este apartado se súbiran los documentos solicitados en formato PDF con un tamaño máximo de 10Mb c/u </p>
+                    <p>Documento de identificación con firma visible (INE, Cédula profesional, Pasaporte o Cartilla del SMN)</p>    
+                </div>
+                <div>
+                    <input type="text"> <input type="file" name="Subir" accept=".pdf" required>
+                    <p>A continuación se requieren fotografías para llevar acabo la solicitud,
+                    deben presentarse en formato JPEG o PNG con un tamaño máximo de 10MB c/u
+                </p>
+                </div>
+                <div>
+                    <p>Fotografía del entorno</p>
+                <input type="text"> <input type="file" name="Subir" accept=".png, .jpg" required>
+                </div>
+                <div>
+                    <p>Fotografía de una hoja</p>
+                    <input type="text"> <input type="file" name="Subir" accept=".png, .jpg" required>
+                </div>
+                <div>
+                    <p>Fotografía del tronco</p>
+                    <input type="text"> <input type="file" name="Subir" accept=".png, .jpg" required>
+                </div>
+                <div>
+                    <p>Fotografía de fauna del árbol (si es que se presenta)</p>
+                    <input type="text"> <input type="file" name="Subir" accept=".png, .jpg" >
+                </div>
+            </div>
             <div class="boton-dir">
                 <input class="boton" type="submit" value="Mandar Solicitud"> 
             </div>
