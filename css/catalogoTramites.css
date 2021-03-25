@@ -68,7 +68,7 @@ body{
     align-items: center;
 }
 .btn{
-    background-color: #84EC3F;
+    background-color: #A3F3A0;
     padding: 1rem;
     margin-left: 2rem;
     font-size: 2rem;
@@ -84,13 +84,25 @@ body{
     padding: 1rem;
     width: 30rem;
 }
-.cuadro-expediente{
+
+.cuadro-tramite{
+    background-color: whitesmoke;
     margin-bottom: 2rem;
     border-style: solid;
     border-width: .02rem;
-    max-width: 70rem;
-    display: flex;
+    max-width: 110rem;
     padding: 2rem
+}
+.encabezado-cuadro{
+    display: flex;
+}
+.informacion-cuadro{
+    display: flex;
+    align-items: center;
+}
+
+.folio,.fecha{
+    width: 50%;
 }
 .idExpediente{
     justify-content: center;
@@ -106,7 +118,17 @@ a{
     color: #4C8CEB;
 }
 a:visited{
-    color: #4C8CEB;
+    color: black;
+}
+.botonshido{
+    padding: 2rem 5rem 2rem 5rem; 
+    background-color: #A3F3A0;
+    color: black;
+    border-style: solid;
+    border-width: 0.15rem;
+}
+h1{
+    font-size: 3.8rem;
 }
 h3{
     font-size: 1.6rem;

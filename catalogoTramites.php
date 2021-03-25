@@ -1,6 +1,7 @@
 <?php 
 include 'Funciones/Funciones.php';
-echo $_SESSION['idUsuario']; 
+require_once 'Funciones/conexion.php';
+obtenerDatos($_SESSION['idUsuario'],$conection,"Tramitante");
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,22 +16,19 @@ echo $_SESSION['idUsuario'];
 			<div class="contenedor">
 				<div class="barra">
 					<a href="login.php"><img src="img/Logo.png" alt="Logo"></a>
-					<a href="Funciones/cerrarSesion.php">Cerrar Sesión</a>
+					<div>
+                    <h1>Tus trámites</h1>
+                </div>
+                <div class="log">
+                    <a href="Funciones/cerrarSesion.php">Cerrar Sesión</a>
+                </div>
 				</div>
 			</div>
 		</header>
 
 		<main class="seccion contenedor">
-			<div class="buscador">
-				<form action="buscarExpediente.php" id="busqueda">
-					<p>
-						<input type="search" name="buscarpaciente" placeholder="Buscar Trámite" class="text">
-						<input type="submit" name="buscar" value="Buscar" class="btn">
-					</p>
-				</form>
-			</div>
-
 			<div class="seccionespecial">
+				<?php obtenerTramites($conection, $_SESSION['idTramitante']);?>
 			</div>
 		</main>
 		<footer class="footer-site seccion"></footer>
