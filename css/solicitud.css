@@ -43,6 +43,7 @@ padding-top: 3rem;
 align-items: center;
 justify-content: space-between;
 }
+
 .barra img{
     width: 15rem;
 }
@@ -75,8 +76,6 @@ align-items: center;
 .formulario{
     font-size: 2rem;
     margin-top: 1rem;
-    background-color: var(--blanco);
-    border-radius: 1rem;
     margin: 0 auto;
 }
 .boton{
@@ -138,4 +137,13 @@ justify-content: space-between;
     margin-bottom: 3rem;
     display: block;
 
+}
+.contenedor-campos .moral{
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.campo p{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }

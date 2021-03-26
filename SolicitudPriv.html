@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preload" href="css/solicitud.css" as="style">
     <link rel="stylesheet" href="css/solicitud.css">
-    <title>Solicitud-Público</title>
+    <title>Solicitud-Privado</title>
     
 </head>
 <body>
@@ -21,7 +21,7 @@
                     <a href="index.html"><img src="img/Logo.png" alt="Logo"></a>
                 </div>
                 <div>
-                    <h1>Solicitud servicio Público</h1>
+                    <h1>Solicitud servicio Privado</h1>
                 </div>
                 <div class="log">
                     <a href="login.php">Mi cuenta</a>
@@ -45,6 +45,13 @@
        <fieldset>
             <legend class="tipo dat">Datos del Trámite</legend>
             <div class="contenedor-campos">
+                <p class=moral>
+                    Datos de persona moral (solo si es el caso)
+                </p>
+                <div class="campo">
+                    <label>Denominación o razón social</label>
+                    <input type="text" name="razon_social">
+                </div>
                 <div class="campo">
                     <label>Alcaldía donde se desea realizar</label>
                     <select name="alcaldia" required>
@@ -91,9 +98,20 @@
                 </div>
                 <div class="campo">
                     <input type="text"> <input type="file" name="credencial" accept=".pdf" required>
-                    <p>A continuación se requieren fotografías para llevar acabo la solicitud,
-                    deben presentarse en formato JPEG o PNG con un tamaño máximo de 10MB c/u
                 </p>
+                </div>
+                <div class="campo">
+                    <p>Documento de acreditación de personalidad jurídica</p>
+                <input type="text"> <input type="file" name="acreditacion" accept=".png, .jpg" required>
+                </div>
+                <div class="campo">
+                    <p>Comprobante de domicilio</p>
+                <input type="text"> <input type="file" name="domicilio" accept=".png, .jpg" required>
+                </div>
+                <div class="campo">
+                    <p>A continuación se requieren fotografías para llevar acabo la solicitud,
+                        deben presentarse en formato JPEG o PNG con un tamaño máximo de 10MB c/u
+                    </p>
                 </div>
                 <div class="campo">
                     <p>Fotografía del entorno</p>
