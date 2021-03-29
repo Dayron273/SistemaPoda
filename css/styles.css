@@ -28,10 +28,19 @@ h3{
 h1,h2,h3{
     text-align: center;
 }
+.sombra{
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.43);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.43);
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.43);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+    }
 .encabezado{
 background-color: var(--encabezado);
 padding: 0 0 2rem 0;
 height: 20%;
+margin-bottom: 5rem;
 }
 .contenedor{
 max-width: 150rem;
@@ -58,4 +67,54 @@ align-items: center;
     text-align: center;
     color: var(--vinculo);
 }
+.principal{
+    max-width: 130rem;  
+    margin-left: auto;
+margin-right: auto;
+}
 
+@media (min-width: 768px) { 
+    .solicitudes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 60rem 60rem;
+        
+    }
+}
+.pub{
+    font-size: 2rem;
+}
+.pub p{
+    font-size: 1.5rem;
+}
+li{
+    margin-bottom: 3rem;
+}
+ol{
+    margin-bottom: 2rem;
+}
+.boton{
+    background-color: var(--botones);
+    color: #212121;
+    padding: 1rem 3rem;
+    font-size: 2.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 1rem;
+    margin-top: 5rem;
+}
+.type{
+    font-weight: normal;
+    font-size: 2rem;
+    text-align: start;
+}
+ul{
+    margin-top: 2rem;
+}
+.nota{
+    font-size: 1.8rem;
+}
+.bot{
+    display: flex;
+    justify-content: center;
+}
