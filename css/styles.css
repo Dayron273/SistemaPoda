@@ -12,6 +12,9 @@ html{
     font-size: 62.5%;
     background-color: var(--blanco);
 }
+body{
+    background-image: linear-gradient(to top, #dfe9f3 0%, var(--blanco) 100% );
+}
 *,*:before,*:after{
     box-sizing: inherit;
     font-family: 'Ubuntu', sans-serif;
