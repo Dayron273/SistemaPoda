@@ -46,7 +46,7 @@ if(!empty($_SESSION['active'])){
 		<div class="contenedor">
 			<div class="barra">
 				<div>
-					<a href="index.html"><img src="img/Logo.png" alt="Logo"></a>
+					<a href="principal.html"><img src="img/Logo.png" alt="Logo"></a>
 				</div>
 				<div class="titulo">
 					<h1>Sistema de llave CDMX</h1>

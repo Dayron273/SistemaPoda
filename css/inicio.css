@@ -7,6 +7,7 @@
     --vinculo:#63B1EE; 
     --parrafo:#DE920C;
     --grisfuerte:#D8D6D4;
+    --verdefuerte : #237500;
 }
 html{
     font-size: 62.5%;
@@ -61,7 +62,7 @@ align-items: center;
 }
 .cont{
     height: 35rem;
-    margin: 5rem 2rem ;
+    margin: 5rem 0rem;
     background-color: var(--parrafo);
     display: flex;
     position: relative;
@@ -70,10 +71,32 @@ align-items: center;
     margin: 2rem 140rem 2rem 2rem ;
     background-image:url("../img/poda.jpg") ;
     width: 50rem;
-    height: 30rem;
+    height: 31rem;
     position: absolute;
 }
 .inf{
-    margin: 2rem 2rem 60rem 
-    
+    margin: 2rem 2rem 2rem 60rem;
+    width: 90rem;
+    height: 30rem;
+    position: absolute;
+}
+.inf h2{
+    text-align: start;
+    color: var(--verdefuerte);
+    font-weight: bold;
+}
+.inf p{
+    font-size: 2.5rem;
+}
+.inf a{
+    position: absolute;
+    background-color: var(--botones);
+    color: #212121;
+    padding: 1rem 3rem;
+    margin: 4rem 2rem 2rem 62rem;
+    font-size: 2.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0.5rem;
+   
 }
