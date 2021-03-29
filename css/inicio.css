@@ -1,0 +1,79 @@
+:root{
+    --blanco:#ffffff;
+    --oscuro:#212121;
+    --gris2:#EFEFEF;
+    --encabezado: #A3F3A0;
+    --botones:#84EC3F;
+    --vinculo:#63B1EE; 
+    --parrafo:#DE920C;
+    --grisfuerte:#D8D6D4;
+}
+html{
+    font-size: 62.5%;
+    background-color: var(--blanco);
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+    font-family: 'Ubuntu', sans-serif;
+}
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+h1,h2,h3{
+    text-align: center;
+}
+.encabezado{
+background-color: var(--grisfuerte);
+padding: 0 0 2rem 0;
+height: 20%;
+}
+.contenedor{
+max-width: 150rem;
+margin-left: auto;
+margin-right: auto;
+}
+.barra{
+display: flex;
+padding-top: 3rem;
+align-items: center;
+justify-content: space-between;
+}
+
+.barra img{
+    width: 15rem;
+}
+.barra .log{
+width: 15rem;
+height: 10rem;
+align-items: center;
+}
+.barra a{
+    text-decoration: none;
+    font-size: 2rem;
+    text-align:center;
+    color :var(--vinculo);
+}
+.cont{
+    height: 35rem;
+    margin: 5rem 2rem ;
+    background-color: var(--parrafo);
+    display: flex;
+    position: relative;
+}
+.ImIcon{
+    margin: 2rem 140rem 2rem 2rem ;
+    background-image:url("../img/poda.jpg") ;
+    width: 50rem;
+    height: 30rem;
+    position: absolute;
+}
+.inf{
+    margin: 2rem 2rem 60rem 
+    
+}
