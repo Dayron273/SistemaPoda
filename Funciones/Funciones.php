@@ -83,7 +83,7 @@ function obtenerTramitesServidor($conection){
             echo "<p><b>Tipo tramite:</b> ".$complemento."</p>";
             echo '<div class = "informacion-cuadro">';
             echo "<div class = 'folio'> $estatus </div>";
-            echo "<div class = 'fecha'><a class  = 'botonshido' href = ''>Visualizar Contenido</a></div>";
+            echo "<div class = 'fecha'><a href='visualizarTramite.php?idtramite=$row[folio]' class  = 'botonshido' href = ''>Visualizar Contenido</a></div>";
             echo "</div>";
             echo "</div>";
         }

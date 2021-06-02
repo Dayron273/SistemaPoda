@@ -14,7 +14,6 @@ include_once 'conexion.php';
     $telefono = $_POST['telefono'];
     $codigoPostal = $_POST['codigoPostal'];
     $alcaldia = $_POST['alcaldia'];
-    $asentamiento = $_POST['asentamiento'];
 
     if($_POST['correo'] == $_POST['emailConf']){
         if($_POST['pass'] == $_POST['passConf']){
@@ -25,14 +24,14 @@ include_once 'conexion.php';
                 if($resultados > 0){
                     $deco = mysqli_fetch_array($query2);
                     $idUser = $deco['idUsuario'];
-                    $query3 = mysqli_query($conection, "INSERT INTO tramitante (apellidoPaterno,apellidoMaterno,nombre,genero,fechaNac,codigoPostal,alcaldia,asentamiento,numeroTel,celular,email,idUsuario,CURP) VALUES('$paterno','$materno','$nombre','$genero','$fechaNac','$codigoPostal','$alcaldia','$asentamiento','$telefono','$celular','$email','$idUser','$curp')");
+                    $query3 = mysqli_query($conection, "INSERT INTO tramitante (apellidoPaterno,apellidoMaterno,nombre,genero,fechaNac,codigoPostal,alcaldia,numeroTel,celular,email,idUsuario,CURP) VALUES('$paterno','$materno','$nombre','$genero','$fechaNac','$codigoPostal','$alcaldia','$telefono','$celular','$email','$idUser','$curp')");
                     if($query3 == true){
                         echo json_encode("exito");
                     }else{
-                        echo json_encode("Error");
+                        echo json_encode("Error2");
                     }
                 }else{
-                    echo json_encode("Error");
+                    echo json_encode("Error1");
                 }
             }else{
                 echo json_encode("errorRegistro1");

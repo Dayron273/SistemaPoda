@@ -5,7 +5,6 @@ session_start();
 $alcaldia = $_POST['alcaldia'];
 $calle = $_POST['calle'];
 $numcalle = $_POST['numcalle'];
-$colonia = $_POST['colonia'];
 $postal = $_POST['postal'];
 $razon = $_POST['razon'];
 $denominacion = $_POST['razon_social'];
@@ -34,7 +33,6 @@ $carpeta_destinoArchivos = $_SERVER['DOCUMENT_ROOT']."/SistemaPoda/archivo/";
 
 if( ($identificacionTamano > 10000000) OR ($comprobanteTamano > 10000000) OR ($acreditacionTamano > 10000000)){
     echo json_encode("Exceso");
-
 }else{
     move_uploaded_file($_FILES['credencial']['tmp_name'],$carpeta_destinoArchivos.$identificacionNombre);
     move_uploaded_file($_FILES['acreditacion']['tmp_name'],$carpeta_destinoArchivos.$acreditacionNombre);
@@ -42,7 +40,7 @@ if( ($identificacionTamano > 10000000) OR ($comprobanteTamano > 10000000) OR ($a
     move_uploaded_file($_FILES['entorno']['tmp_name'],$carpeta_destino.$nombreImgEntorno);
     move_uploaded_file($_FILES['hoja']['tmp_name'],$carpeta_destino.$nombreImgHoja);
     move_uploaded_file($_FILES['tronco']['tmp_name'],$carpeta_destino.$nombreImgTronco);
-    $query = mysqli_query($conection,"INSERT INTO tramite(idTramitante,razontramite,tipoTramite,alcaldia,calle,colonia,numeroExt,codigoPostal,descripcion,nombreDocIdentificacion,nombreDocJuridico,nombreComprobanteDomicilio,nombreFotoEntorno,nombreFotoHoja,nombreFotoTronco,status) VALUES ('$idTramitante','$denominacion','privado','$alcaldia', '$calle', '$colonia', '$numcalle','$postal','$razon', '$identificacionNombre','$acreditacionNombre','$comprobanteNombre' ,'$nombreImgEntorno', '$nombreImgHoja', '$nombreImgTronco', 'Pendiente de revisión')");
+    $query = mysqli_query($conection,"INSERT INTO tramite(idTramitante,razontramite,tipoTramite,alcaldia,calle,numeroExt,codigoPostal,descripcion,nombreDocIdentificacion,nombreDocJuridico,nombreComprobanteDomicilio,nombreFotoEntorno,nombreFotoHoja,nombreFotoTronco,status) VALUES ('$idTramitante','$denominacion','privado','$alcaldia', '$calle', '$numcalle','$postal','$razon', '$identificacionNombre','$acreditacionNombre','$comprobanteNombre' ,'$nombreImgEntorno', '$nombreImgHoja', '$nombreImgTronco', 'Pendiente de revisión')");
     if($query == true){
         echo json_encode("Correcto");
     }else{

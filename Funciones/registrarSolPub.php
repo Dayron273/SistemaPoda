@@ -5,7 +5,6 @@ session_start();
 $alcaldia = $_POST['alcaldia'];
 $calle = $_POST['calle'];
 $numcalle = $_POST['numcalle'];
-$colonia = $_POST['colonia'];
 $postal = $_POST['postal'];
 $razon = $_POST['razon'];
 $nombreImgEntorno = $_FILES['entorno']['name'];
@@ -29,7 +28,7 @@ move_uploaded_file($_FILES['hoja']['tmp_name'],$carpeta_destino.$nombreImgHoja);
 move_uploaded_file($_FILES['tronco']['tmp_name'],$carpeta_destino.$nombreImgTronco);
 
 if($identificacionTamano < 10000000){
-    $query = mysqli_query($conection,"INSERT INTO tramite(idTramitante,tipoTramite,alcaldia,calle,colonia,numeroExt,codigoPostal,descripcion,nombreDocIdentificacion,nombreFotoEntorno,nombreFotoHoja,nombreFotoTronco,status) VALUES ('$idTramitante','publico','$alcaldia', '$calle', '$colonia', '$numcalle','$postal','$razon', '$identificacionNombre' ,'$nombreImgEntorno', '$nombreImgHoja', '$nombreImgTronco', 'Pendiente de revisión')");
+    $query = mysqli_query($conection,"INSERT INTO tramite(idTramitante,tipoTramite,alcaldia,calle,numeroExt,codigoPostal,descripcion,nombreDocIdentificacion,nombreFotoEntorno,nombreFotoHoja,nombreFotoTronco,status) VALUES ('$idTramitante','publico','$alcaldia', '$calle', '$numcalle','$postal','$razon', '$identificacionNombre' ,'$nombreImgEntorno', '$nombreImgHoja', '$nombreImgTronco', 'Pendiente de revisión')");
     if($query == true){
         echo json_encode("Correcto");
     }else{

@@ -15,7 +15,7 @@ obtenerDatos($_SESSION['idUsuario'],$conection,"Tramitante");
 		<header class="site-header">
 			<div class="contenedor">
 				<div class="barra">
-					<a href="login.php"><img src="img/Logo.png" alt="Logo"></a>
+					<a href="index.php"><img src="img/Logo.png" alt="Logo"></a>
 					<div>
                     <h1>Tus trámites</h1>
                 </div>
